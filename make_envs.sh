@@ -1,10 +1,6 @@
 #!/bin/bash
 
-FILES=environments/*
-
-for f in $FILES
-do
+for f in ./environments/*.yml; do
   echo "Processing $f..."
-  cat $f
   conda env create --file $f
 done
