@@ -1,0 +1,27 @@
+# This is an environment for working with R and RStudio
+# note that custom packages can still be installed using
+# install.packages(). This setup provides a set of core 
+# packages, including those with complex dependencies
+# that install.packages() may not be able to find easily
+name: rdata
+channels:
+    - r
+    - conda-forge
+    - defaults
+dependencies:
+    - r-base=3.5.1  # specifying a base version speeds up installation dramatically
+    - r-essentials  # basic packages
+    - r-catools 
+    - r-sp          # for spatial data
+    - r-sf          # modern alternative for spatial data
+    - r-gstat       # spatial stats
+    - r-automap     # spatial stats
+    - r-rstan       # bayesian stats
+    - r-bayesplot   # plot bayesian analysis
+    - r-viridis     # nice color map
+    - r-mapproj     # map projections
+    - r-ggthemes    # more colors and themes
+    - r-locfit      # local polynomial regression
+    - r-data.table  # alternative to dplyr
+    - rstudio       # use RStudio
+    - jupyter       # alternative to RStudio
