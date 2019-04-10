@@ -1,0 +1,18 @@
+# work with tensorflow and openai gym
+name: reinforcement
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.6        # use a recent version of python
+    - tensorflow>=1.10  # recent tf version
+    - matplotlib
+    - mypy
+    - seaborn
+    - scikit-learn
+    - numpy
+    - jupyter
+    - pandas
+    - pylint
+    - pip:
+        - gym[atari]
