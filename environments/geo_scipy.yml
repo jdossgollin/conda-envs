@@ -6,7 +6,8 @@ channels:
     - conda-forge
     - defaults
 dependencies:
-    - python=3.6    # Python version 3.6
+    - python=3.7    # Python version 3.6
+    - black         # clean code and make it pretty
     - bottleneck    # C-optimized array functions for NumPy
     - cartopy       # Geographic plotting toolkit
     - cython        # Transpile Python->C
@@ -16,10 +17,13 @@ dependencies:
     - ipython       # IPython interpreter and tools
     - jupyter       # Jupyter federation architecture
     - matplotlib    # 2D plotting library
+    - mpi4py        # mpi for python library
+    - mypy          # type checking
     - netcdf4       # Wrapper for netcdf4
     - notebook      # Notebook interface
     - numpy         # N-d array and numerics
     - pandas        # Labeled array library
+    - pylint        # catch errors before you make them
     - pyresample    # Geographic resampling tools
     - scipy         # Common math/stats/science functions
     - scikit-learn  # Macine learning library
@@ -28,4 +32,3 @@ dependencies:
     - six           # Python 2/3 compatibility
     - tqdm          # Nice progressbar for longer computations
     - xarray        # N-d labeled array library
-    - mpi4py        # mpi for python library
