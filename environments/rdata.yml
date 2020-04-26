@@ -9,19 +9,17 @@ channels:
     - conda-forge
     - defaults
 dependencies:
-    - r-base=3.5.1  # specifying a base version speeds up installation dramatically
-    - r-essentials  # basic packages
-    - r-catools 
-    - r-sp          # for spatial data
-    - r-sf          # modern alternative for spatial data
-    - r-gstat       # spatial stats
     - r-automap     # spatial stats
-    - r-rstan       # bayesian stats
+    - r-base=3.5.3  # specifying a base version speeds up installation dramatically
     - r-bayesplot   # plot bayesian analysis
-    - r-viridis     # nice color map
-    - r-mapproj     # map projections
-    - r-ggthemes    # more colors and themes
-    - r-locfit      # local polynomial regression
     - r-data.table  # alternative to dplyr
+    - r-essentials  # basic packages
+    - r-ggthemes    # more colors and themes
+    - r-gstat       # spatial stats
+    - r-locfit      # local polynomial regression
+    - r-mapproj     # map projections
+    - r-rstan       # bayesian stats
+    - r-sf          # modern alternative for spatial data
+    - r-sp          # for spatial data
+    - r-viridis     # nice color map
     - rstudio       # use RStudio
-    - jupyter       # alternative to RStudio
