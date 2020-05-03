@@ -1,0 +1,35 @@
+# conda environment with snakemake installed and all required packages
+# can use this to install snakemake on any system
+# this works better than trying to pip install snakemake as some dependencies
+# have additional complicated dependencies that can lead to problems
+name: snakemake
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - appdirs
+  - configargparse
+  - crc32c
+  - datrie
+  - docutils
+  - gitpython
+  - google-api-python-client
+  - google-cloud-storage
+  - jinja2
+  - jsonschema
+  - nbformat
+  - networkx
+  - oauth2client
+  - pip
+  - psutil
+  - pygments
+  - pygraphviz
+  - pyyaml
+  - ratelimiter
+  - requests
+  - slacker
+  - toposort
+  - wrapt
+  - pip:
+      - snakemake
