@@ -1,6 +1,6 @@
 # This is an environment for working with R and RStudio
 # note that custom packages can still be installed using
-# install.packages(). This setup provides a set of core 
+# install.packages(). This setup provides a set of core
 # packages, including those with complex dependencies
 # that install.packages() may not be able to find easily
 name: rdata
@@ -9,17 +9,18 @@ channels:
     - conda-forge
     - defaults
 dependencies:
-    - r-automap     # spatial stats
-    - r-base=3.5.3  # specifying a base version speeds up installation dramatically
-    - r-bayesplot   # plot bayesian analysis
-    - r-data.table  # alternative to dplyr
-    - r-essentials  # basic packages
-    - r-ggthemes    # more colors and themes
-    - r-gstat       # spatial stats
-    - r-locfit      # local polynomial regression
-    - r-mapproj     # map projections
-    - r-rstan       # bayesian stats
-    - r-sf          # modern alternative for spatial data
-    - r-sp          # for spatial data
-    - r-viridis     # nice color map
-    - rstudio       # use RStudio
+    - r-automap # spatial stats
+    - r-base # base r
+    - r-bayesplot # plot bayesian analysis
+    - r-data.table # alternative to dplyr
+    - r-essentials # basic packages
+    - r-ggthemes # more colors and themes
+    - r-gstat # spatial stats
+    - r-locfit # local polynomial regression
+    - r-mapproj # map projections
+    - r-rstan # bayesian stats
+    - r-sf # modern alternative for spatial data
+    - r-sp # for spatial data
+    - r-viridis # nice color map
+    - r-waveletcomp # wavelet package
+    - rstudio # use RStudio
