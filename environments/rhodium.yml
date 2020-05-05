@@ -1,0 +1,40 @@
+# Conda environment for rhodium: https://github.com/Project-Platypus/Rhodium
+# by James Doss-Gollin
+#
+# To use:
+# conda env create --file rhodium.yml
+# conda activate rhodium # most conda installs
+# source activate rhodium # old conda / some windows installs
+#
+# This installs:
+# rhodium and required dependencies
+# plus: ipython, jupyter (for notebooks)
+#
+# submit bugs to github.com/jdossgollin/conda-envs issues
+name: rhodium
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.5 # recent version of python
+  - ipython # for interactive kernel
+  - jupyter # for notebooks
+  - matplotlib # plots
+  - mock # testing suite for platypus
+  - nose # testing suite for platypus
+  - numpy # numerical computing
+  - openmdao # efficient optimization
+  - pandas # work with data frames
+  - pip # install packages from github
+  - pydot # graph library
+  - salib # sensitivity analysis
+  - scikit-learn # machine learning modules
+  - scipy # scientific python
+  - seaborn # statistical visualizations
+  - six # used for cross-platform dependence
+  - tqdm # progress bar
+  - pip:
+      - mpldatacursor # required
+      - git+https://github.com/Project-Platypus/Platypus.git
+      - git+https://github.com/Project-Platypus/PRIM.git
+      - git+https://github.com/Project-Platypus/Rhodium.git
