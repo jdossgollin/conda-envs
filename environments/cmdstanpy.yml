@@ -1,0 +1,30 @@
+# cmdstanpy environment
+# by James Doss-Gollin
+#
+# installs cmdstanpy and basic functions for visualization and data cleaning
+#
+# To use:
+# conda env create --name cmdstanpy.yml
+# conda activate cmdstanpy
+# python> import cmdstanpy
+# python> cmdstanpy.install_cmdstan()
+#
+# submit bugs to github.com/jdossgollin/conda-envs issues
+name: cmdstanpy
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.7 # recent version of python
+  - arviz
+  - ipython # for interactive kernel
+  - jupyter # for notebooks
+  - matplotlib # plots
+  - numpy # numerical computing
+  - pandas # work with data frames
+  - pip # install packages from github
+  - seaborn # statistical visualizations
+  - six # used for cross-platform dependence
+  - tqdm # progress bar
+  - pip:
+      - cmdstanpy
