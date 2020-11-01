@@ -1,0 +1,6 @@
+name: youtube-dl
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - youtube-dl
