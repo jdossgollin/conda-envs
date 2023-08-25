@@ -1,0 +1,12 @@
+name: networkx
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9 # recent version of python
+  - ipython # for interactive kernel
+  - jupyter # for notebooks
+  - matplotlib # plots
+  - networkx
+  - numpy # numerical computing
+  - pip # install packages from github
